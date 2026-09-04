@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You</title>
     <link rel="icon" type="image/png" href="imgs/apple-icon-114x114.png">
+    <link rel="stylesheet" href="../responsive.css">
     <style>
         * {
             margin: 0;
@@ -41,11 +42,22 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            padding: 100px 0;
+            /* padding: 100px 0; */
             gap: 2rem;
+            height: 100vh;
         }
 
-        h2 {
+
+        img {
+            width: 300px;
+        }
+
+        .box-forthanks {
+            width: 95%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid red; */
             text-align: center;
             font-family: braind-yerevan;
             color: white;
@@ -54,8 +66,26 @@
             font-weight: normal;
         }
 
-        img {
-            width: 300px;
+        @media screen and (max-width:720px) {
+            .box-forthanks{
+                font-size: 50px;
+            }
+            img{
+                width: 250px;
+            }
+        }
+        @media screen and (max-width:420px) {
+            .box-forthanks{
+                font-size: 40px;
+            }
+            img{
+                width: 200px;
+            }
+        }
+        @media screen and (max-width:220px) {
+            .box-forthanks{
+                font-size: 20px;
+            }
         }
     </style>
 </head>
@@ -66,8 +96,9 @@
     <a href="../index.html">
         <img src="imgs/logo.svg" alt="">
     </a>
-    <h2>Շնորհակալություն <br> Ձեր Նամակը չի անտեսվի</h2>
-
+    <div class="box-forthanks">
+        Շնորհակալություն <br> Ձեր Նամակը չի անտեսվի
+    </div>
 
 </body>
 
